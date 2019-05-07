@@ -1,0 +1,9 @@
+# USE AN EXISTING UMAGE AS A BASE
+FROM alpine
+
+# DOWNLOAD AND INSTALL A DEPENDENCY
+RUN apk add --update redis
+RUN apk add --update gcc
+
+# TELL THE IMAGE WHAT TO DO WHEN IT STARTS AS A CONTAINER
+CMD ["redis-server"]

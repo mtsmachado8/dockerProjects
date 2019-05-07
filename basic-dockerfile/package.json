@@ -1,0 +1,12 @@
+{
+  "name": "basic-dockerfile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "docker build -t mtsmachado8/basic-dockerfile .",
+    "start": "docker run mtsmachado8/basic-dockerfile"
+  },
+  "author": "",
+  "license": "ISC"
+}

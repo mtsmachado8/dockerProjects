@@ -1,0 +1,11 @@
+# USE AN EXISTING UMAGE AS A BASE
+FROM node:alpine
+
+WORKDIR /usr/app
+
+# DOWNLOAD AND INSTALL DEPENDENCIES
+COPY ./ ./
+RUN npm install
+
+# TELL THE IMAGE WHAT TO DO WHEN IT STARTS AS A CONTAINER
+CMD ["npm", "run", "docker-start"]
